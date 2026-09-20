@@ -65,6 +65,7 @@ public class TK2_Klmpk5 {
         pesawat1.setMaskapai("Super Air Indonesia");
         pesawat1.setJumlahRoda(6);
         // Menggunakan Getter untuk mengambil nilai atribut
+        System.out.println("\n=== Data Pesawat ===");
         System.out.println("Merk:"+pesawat1.getMerk());
         System.out.println("Warna:"+pesawat1.getWarna());
         System.out.println("Tipe:"+pesawat1.getMaskapai());
