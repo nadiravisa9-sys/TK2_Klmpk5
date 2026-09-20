@@ -56,6 +56,19 @@ public class TK2_Klmpk5 {
         System.out.println("Warna :"+ Truk1.getWarna());
         System.out.println("Tipe :"+ Truk1.getTipe());
         System.out.println("Jumlah Roda :"+ Truk1.getJumlahRoda());
+        
+        // Membuat objek Pesawat dengan data awal
+        Pesawat pesawat1 = new Pesawat ("Boeing", "Putih", "Lion Air", 6);
+        // Menggunakan Setter untuk mengubah nilai atribut
+        pesawat1.setMerk("Airbus");
+        pesawat1.setWarna("Putih");
+        pesawat1.setMaskapai("Super Air Indonesia");
+        pesawat1.setJumlahRoda(6);
+        // Menggunakan Getter untuk mengambil nilai atribut
+        System.out.println("Merk:"+pesawat1.getMerk());
+        System.out.println("Warna:"+pesawat1.getWarna());
+        System.out.println("Tipe:"+pesawat1.getMaskapai());
+        System.out.println("JumlahRoda:"+pesawat1.getJumlahRoda());
     }
     
 }
