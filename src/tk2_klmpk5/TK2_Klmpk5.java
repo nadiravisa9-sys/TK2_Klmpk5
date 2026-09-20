@@ -14,7 +14,8 @@ public class TK2_Klmpk5 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        //// Membuat objek Motor dengan data awal
+        
+        //Membuat objek Motor dengan data awal
         Motor motor1 = new Motor("Yamaha", "Merah", "Vega R", 2);
         //Menggunakan Setter untuk mengubah nilai atribut
         motor1.setMerk("Honda");
