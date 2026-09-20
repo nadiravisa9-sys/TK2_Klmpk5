@@ -42,7 +42,20 @@ public class TK2_Klmpk5 {
         System.out.println("Warna : " + mobil1.getWarna());
         System.out.println("Tipe : " + mobil1.getTipe());
         System.out.println("Jumlah Roda : " + mobil1.getJumlahRoda());
-
+       
+        
+        Truk Truk1 = new Truk("Mitsubishi","Kuning","Fuso",6);
+        //Menggunakan Setter untuk mengubah nilai atribut
+        Truk1.setMerk("Hino");
+        Truk1.setWarna("Hijau");
+        Truk1.setTipe("Dutro");
+        Truk1.setJumlahRoda(6);
+        //Menggunakan Getter untuk mengambil nilai atribut
+        System.out.println("\n=== Data Truk ===");
+        System.out.println("Merk :"+ Truk1.getMerk());
+        System.out.println("Warna :"+ Truk1.getWarna());
+        System.out.println("Tipe :"+ Truk1.getTipe());
+        System.out.println("Jumlah Roda :"+ Truk1.getJumlahRoda());
     }
     
 }
