@@ -22,10 +22,25 @@ public class TK2_Klmpk5 {
         motor1.setTipe("Vario");
         motor1.setJumlahRoda(2);
         //Menggunakan Getter untuk mengambil nilai atribut
+        System.out.println("=== Data Motor ===");
         System.out.println("Merk : " + motor1.getMerk());
         System.out.println("Warna : " + motor1.getWarna());
         System.out.println("Tipe : " + motor1.getTipe());
         System.out.println("Jumlah Roda : " + motor1.getJumlahRoda());
+        
+        // Membuat Onjek Mobil dengan data awal
+        Mobil mobil1 = new Mobil("Toyota", "Hitam", "Aplhard", 4);
+        // Menggunakan Setter untuk mengubah nilai atribut
+        mobil1.setMerk("Honda");
+        mobil1.setWarna("Putih");
+        mobil1.setTipe("Civic");
+        mobil1.setJumlahRoda(4);
+        //Menggunakan Getter untuk mengambil nilai atribut
+        System.out.println("\n=== Data Mobil ===");
+        System.out.println("Merk : " + mobil1.getMerk());
+        System.out.println("Warna : " + mobil1.getWarna());
+        System.out.println("Tipe : " + mobil1.getTipe());
+        System.out.println("Jumlah Roda : " + mobil1.getJumlahRoda());
 
     }
     

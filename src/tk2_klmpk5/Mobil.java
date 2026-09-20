@@ -12,9 +12,9 @@ public class Mobil {
     String merk;
     String warna;
     String tipe;
-    String jumlahRoda;
+    int jumlahRoda;
 
-    public Mobil(String merk, String warna, String tipe, String jumlahRoda) {
+    public Mobil(String merk, String warna, String tipe, int jumlahRoda) {
         this.merk = merk;
         this.warna = warna;
         this.tipe = tipe;
@@ -45,12 +45,13 @@ public class Mobil {
         this.tipe = tipe;
     }
 
-    public String getJumlahRoda() {
+    public int getJumlahRoda() {
         return jumlahRoda;
     }
 
-    public void setJumlahRoda(String jumlahRoda) {
+    public void setJumlahRoda(int jumlahRoda) {
         this.jumlahRoda = jumlahRoda;
     }
+
     
 }
