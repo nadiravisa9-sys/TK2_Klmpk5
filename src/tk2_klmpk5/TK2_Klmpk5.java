@@ -14,7 +14,8 @@ public class TK2_Klmpk5 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-
+        
+        //Sirdzat
         //Membuat objek Motor dengan data awal
         Motor motor1 = new Motor("Yamaha", "Merah", "Vega R", 2);
         //Menggunakan Setter untuk mengubah nilai atribut
@@ -29,7 +30,8 @@ public class TK2_Klmpk5 {
         System.out.println("Tipe : " + motor1.getTipe());
         System.out.println("Jumlah Roda : " + motor1.getJumlahRoda());
 
-        // Membuat Onjek Mobil dengan data awal
+        // Nadira
+        // Membuat Objek Mobil dengan data awal
         Mobil mobil1 = new Mobil("Toyota", "Hitam", "Aplhard", 4);
         // Menggunakan Setter untuk mengubah nilai atribut
         mobil1.setMerk("Honda");
@@ -43,6 +45,8 @@ public class TK2_Klmpk5 {
         System.out.println("Tipe : " + mobil1.getTipe());
         System.out.println("Jumlah Roda : " + mobil1.getJumlahRoda());
 
+        //Saiful
+        // Membuat Objek Truk dengan data awal
         Truk Truk1 = new Truk("Mitsubishi", "Kuning", "Fuso", 6);
         //Menggunakan Setter untuk mengubah nilai atribut
         Truk1.setMerk("Hino");
@@ -56,6 +60,7 @@ public class TK2_Klmpk5 {
         System.out.println("Tipe : " + Truk1.getTipe());
         System.out.println("Jumlah Roda : " + Truk1.getJumlahRoda());
 
+        //Faris
         // Membuat objek Pesawat dengan data awal
         Pesawat pesawat1 = new Pesawat("Boeing", "Putih", "Lion Air", 6);
         // Menggunakan Setter untuk mengubah nilai atribut
@@ -68,8 +73,9 @@ public class TK2_Klmpk5 {
         System.out.println("Merk : " + pesawat1.getMerk());
         System.out.println("Warna : " + pesawat1.getWarna());
         System.out.println("Maskapai : " + pesawat1.getMaskapai());
-        System.out.println("JumlahRoda : " + pesawat1.getJumlahRoda());
+        System.out.println("Jumlah Roda : " + pesawat1.getJumlahRoda());
 
+        //Waffa
         // Membuat objek Sepeda dengan data awal
         Sepeda sepeda1 = new Sepeda("Polygon", "Biru", "Xtrada 5", 2);
         // Menggunakan Setter untuk mengubah nilai atribut
@@ -84,6 +90,7 @@ public class TK2_Klmpk5 {
         System.out.println("Tipe : " + sepeda1.getTipe());
         System.out.println("Jumlah Roda : " + sepeda1.getJumlahRoda());
 
+        //Anam
         //Membuat objek Bus dengan data awal
         Bus bus1 = new Bus("Mercedes-Benz", "Putih", "OH 1626", 6);
         //Mengunakan Setter untuk mengubah nilai atribut
