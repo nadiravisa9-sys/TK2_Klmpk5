@@ -83,6 +83,20 @@ public class TK2_Klmpk5 {
         System.out.println("Warna : " + sepeda1.getWarna());
         System.out.println("Tipe : " + sepeda1.getTipe());
         System.out.println("Jumlah Roda : " + sepeda1.getJumlahRoda());
+
+        //Membuat objek Bus dengan data awal
+        Bus bus1 = new Bus("Mercedes-Benz", "Putih", "OH 1626", 6);
+        //Mengunakan Setter untuk mengubah nilai atribut
+        bus1.setMerk("Scania");
+        bus1.setWarna("Merah");
+        bus1.setTipe("K410");
+        bus1.setJumlahRoda(6);
+        //Menggunakan Getter untuk mengambil nilai atribut
+        System.out.println("\n=== Data Bus ===");
+        System.out.println("Merk : " + bus1.getMerk());
+        System.out.println("Warna : " + bus1.getWarna());
+        System.out.println("Tipe : " + bus1.getTipe());
+        System.out.println("Jumlah Roda :" + bus1.getJumlahRoda());
     }
 
 }

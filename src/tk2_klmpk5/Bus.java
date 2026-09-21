@@ -1,0 +1,58 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package tk2_klmpk5;
+
+/**
+ *
+ * @author ANAM
+ */
+public class Bus {
+    String Merk;
+    String Warna;
+    String Tipe;
+    int jumlahRoda; 
+
+    public Bus(String Merk, String Warna, String Tipe, int jumlahRoda) {
+        this.Merk = Merk;
+        this.Warna = Warna;
+        this.Tipe = Tipe;
+        this.jumlahRoda = jumlahRoda;
+    }
+
+    public String getMerk() {
+        return Merk;
+    }
+
+    public void setMerk(String Merk) {
+        this.Merk = Merk;
+    }
+
+    public String getWarna() {
+        return Warna;
+    }
+
+    public void setWarna(String Warna) {
+        this.Warna = Warna;
+    }
+
+    public String getTipe() {
+        return Tipe;
+    }
+
+    public void setTipe(String Tipe) {
+        this.Tipe = Tipe;
+    }
+
+    public int getJumlahRoda() {
+        return jumlahRoda;
+    }
+
+    public void setJumlahRoda(int jumlahRoda) {
+        this.jumlahRoda = jumlahRoda;
+    }
+    
+     
+}
+
