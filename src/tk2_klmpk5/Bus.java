@@ -12,9 +12,15 @@ public class Bus {
     String Merk;
     String Warna;
     String Tipe;
-    int jumlahRoda; 
-
-    public Bus(String Merk, String Warna, String Tipe, int jumlahRoda) {
+    String jumlahRoda; 
+    
+    public Bus() {
+        this.Merk = "";
+        this.Warna = "";
+        this.Tipe = "";
+        this.jumlahRoda = "";
+    }
+    public Bus(String Merk, String Warna, String Tipe, String jumlahRoda) {
         this.Merk = Merk;
         this.Warna = Warna;
         this.Tipe = Tipe;
@@ -45,13 +51,15 @@ public class Bus {
         this.Tipe = Tipe;
     }
 
-    public int getJumlahRoda() {
+    public String getJumlahRoda() {
         return jumlahRoda;
     }
 
-    public void setJumlahRoda(int jumlahRoda) {
+    public void setJumlahRoda(String jumlahRoda) {
         this.jumlahRoda = jumlahRoda;
     }
+
+
     
      
 }
