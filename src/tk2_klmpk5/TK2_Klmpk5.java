@@ -62,12 +62,12 @@ public class TK2_Klmpk5 {
 
         //Faris
         // Membuat objek Pesawat dengan data awal
-        Pesawat pesawat1 = new Pesawat("Boeing", "Putih", "Lion Air", 6);
+        Pesawat pesawat1 = new Pesawat("Boeing", "Putih", "Lion Air", "6");
         // Menggunakan Setter untuk mengubah nilai atribut
         pesawat1.setMerk("Airbus");
         pesawat1.setWarna("Putih");
         pesawat1.setMaskapai("Super Air Indonesia");
-        pesawat1.setJumlahRoda(6);
+        pesawat1.setJumlahRoda("6");
         // Menggunakan Getter untuk mengambil nilai atribut
         System.out.println("\n=== Data Pesawat ===");
         System.out.println("Merk : " + pesawat1.getMerk());
