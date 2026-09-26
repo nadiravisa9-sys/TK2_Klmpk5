@@ -32,12 +32,12 @@ public class TK2_Klmpk5 {
 
         // Nadira
         // Membuat Objek Mobil dengan data awal
-        Mobil mobil1 = new Mobil("Toyota", "Hitam", "Aplhard", 4);
+        Mobil mobil1 = new Mobil("Toyota", "Hitam", "Aplhard", "4");
         // Menggunakan Setter untuk mengubah nilai atribut
         mobil1.setMerk("Honda");
         mobil1.setWarna("Putih");
         mobil1.setTipe("Civic");
-        mobil1.setJumlahRoda(4);
+        mobil1.setJumlahRoda("4");
         //Menggunakan Getter untuk mengambil nilai atribut
         System.out.println("\n=== Data Mobil ===");
         System.out.println("Merk : " + mobil1.getMerk());

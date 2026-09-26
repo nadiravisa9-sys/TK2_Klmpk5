@@ -64,7 +64,7 @@ public class frameMobil extends javax.swing.JFrame {
 
         jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel1.setText("MOTOR");
+        jLabel1.setText("MOBIL");
 
         jLabel2.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
         jLabel2.setText("Nama Merk : ");
@@ -250,16 +250,16 @@ public class frameMobil extends javax.swing.JFrame {
 
     private void btnSimpanActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSimpanActionPerformed
         // TODO add your handling code here:
-        Motor Mt = new Motor();
-        Mt.setMerk(tMerk.getText());
-        Mt.setWarna(tWarna.getText());
-        Mt.setTipe(tTipe.getText());
-        Mt.setJumlahRoda(tRoda.getText());
+        Mobil Mb = new Mobil();
+        Mb.setMerk(tMerk.getText());
+        Mb.setWarna(tWarna.getText());
+        Mb.setTipe(tTipe.getText());
+        Mb.setJumlahRoda(tRoda.getText());
 
-        oMerk.setText(Mt.getMerk());
-        oWarna.setText(Mt.getWarna());
-        oTipe.setText(Mt.getTipe());
-        oRoda.setText(Mt.getJumlahRoda());
+        oMerk.setText(Mb.getMerk());
+        oWarna.setText(Mb.getWarna());
+        oTipe.setText(Mb.getTipe());
+        oRoda.setText(Mb.getJumlahRoda());
     }//GEN-LAST:event_btnSimpanActionPerformed
 
     /**
