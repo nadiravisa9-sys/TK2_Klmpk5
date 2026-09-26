@@ -12,9 +12,16 @@ public class Motor {
     String Merk;
     String Warna;
     String Tipe;
-    int jumlahRoda;
+    String jumlahRoda;
+    
+        public Motor() {
+        this.Merk = "";
+        this.Warna = "";
+        this.Tipe = "";
+        this.jumlahRoda = "";
+    }
 
-    public Motor(String Merk, String Warna, String Tipe, int jumlahRoda) {
+    public Motor(String Merk, String Warna, String Tipe, String jumlahRoda) {
         this.Merk = Merk;
         this.Warna = Warna;
         this.Tipe = Tipe;
@@ -45,12 +52,11 @@ public class Motor {
         this.Tipe = Tipe;
     }
 
-    public int getJumlahRoda() {
+    public String getJumlahRoda() {
         return jumlahRoda;
     }
 
-    public void setJumlahRoda(int jumlahRoda) {
+    public void setJumlahRoda(String jumlahRoda) {
         this.jumlahRoda = jumlahRoda;
     }
-    
 }
