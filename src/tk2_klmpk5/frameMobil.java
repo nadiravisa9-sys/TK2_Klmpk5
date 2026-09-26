@@ -6,19 +6,18 @@ package tk2_klmpk5;
 
 /**
  *
- * @author Sirdzat
+ * @author NADIRA
  */
-public class FrameMotor extends javax.swing.JFrame {
+public class frameMobil extends javax.swing.JFrame {
     
-    private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(FrameMotor.class.getName());
+    private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(frameMobil.class.getName());
 
     /**
-     * Creates new form FrameMotor
+     * Creates new form frameMobil
      */
-    public FrameMotor() {
+    public frameMobil() {
         initComponents();
     }
-    
     void Reset(){
         tMerk.setText(null);
         tRoda.setText(null);
@@ -30,7 +29,6 @@ public class FrameMotor extends javax.swing.JFrame {
         oTipe.setText(null);
         oWarna.setText(null);
     }
-    
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -163,7 +161,7 @@ public class FrameMotor extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 557, Short.MAX_VALUE)
+            .addComponent(jLabel1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
@@ -226,16 +224,11 @@ public class FrameMotor extends javax.swing.JFrame {
         );
 
         pack();
-        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
-
-    private void tRodaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tRodaActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_tRodaActionPerformed
 
     private void tMerkActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tMerkActionPerformed
         // TODO add your handling code here:
- 
+
     }//GEN-LAST:event_tMerkActionPerformed
 
     private void tWarnaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tWarnaActionPerformed
@@ -246,6 +239,15 @@ public class FrameMotor extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_tTipeActionPerformed
 
+    private void tRodaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tRodaActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_tRodaActionPerformed
+
+    private void btnResetActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnResetActionPerformed
+        // TODO add your handling code here:
+        Reset();
+    }//GEN-LAST:event_btnResetActionPerformed
+
     private void btnSimpanActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSimpanActionPerformed
         // TODO add your handling code here:
         Motor Mt = new Motor();
@@ -253,17 +255,12 @@ public class FrameMotor extends javax.swing.JFrame {
         Mt.setWarna(tWarna.getText());
         Mt.setTipe(tTipe.getText());
         Mt.setJumlahRoda(tRoda.getText());
-        
+
         oMerk.setText(Mt.getMerk());
         oWarna.setText(Mt.getWarna());
         oTipe.setText(Mt.getTipe());
         oRoda.setText(Mt.getJumlahRoda());
     }//GEN-LAST:event_btnSimpanActionPerformed
-
-    private void btnResetActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnResetActionPerformed
-        // TODO add your handling code here:
-       Reset();
-    }//GEN-LAST:event_btnResetActionPerformed
 
     /**
      * @param args the command line arguments
@@ -287,7 +284,7 @@ public class FrameMotor extends javax.swing.JFrame {
         //</editor-fold>
 
         /* Create and display the form */
-        java.awt.EventQueue.invokeLater(() -> new FrameMotor().setVisible(true));
+        java.awt.EventQueue.invokeLater(() -> new frameMobil().setVisible(true));
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
