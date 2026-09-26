@@ -12,9 +12,16 @@ public class Pesawat {
     String Merk;
     String Warna;
     String Maskapai;
-    int jumlahRoda;
+    String jumlahRoda;
+    
+     public Pesawat() {
+        this.Merk = "";
+        this.Warna = "";
+        this.Maskapai = "";
+        this.jumlahRoda = "";
+    }
 
-    public Pesawat(String Merk, String Warna, String Maskapai, int jumlahRoda) {
+    public Pesawat(String Merk, String Warna, String Maskapai, String jumlahRoda) {
         this.Merk = Merk;
         this.Warna = Warna;
         this.Maskapai = Maskapai;
@@ -45,11 +52,11 @@ public class Pesawat {
         this.Maskapai = Maskapai;
     }
 
-    public int getJumlahRoda() {
+    public String getJumlahRoda() {
         return jumlahRoda;
     }
 
-    public void setJumlahRoda(int jumlahRoda) {
+    public void setJumlahRoda(String jumlahRoda) {
         this.jumlahRoda = jumlahRoda;
     }
     

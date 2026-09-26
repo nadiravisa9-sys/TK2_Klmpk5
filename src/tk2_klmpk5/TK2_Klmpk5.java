@@ -32,12 +32,12 @@ public class TK2_Klmpk5 {
 
         // Nadira
         // Membuat Objek Mobil dengan data awal
-        Mobil mobil1 = new Mobil("Toyota", "Hitam", "Aplhard", 4);
+        Mobil mobil1 = new Mobil("Toyota", "Hitam", "Aplhard", "4");
         // Menggunakan Setter untuk mengubah nilai atribut
         mobil1.setMerk("Honda");
         mobil1.setWarna("Putih");
         mobil1.setTipe("Civic");
-        mobil1.setJumlahRoda(4);
+        mobil1.setJumlahRoda("4");
         //Menggunakan Getter untuk mengambil nilai atribut
         System.out.println("\n=== Data Mobil ===");
         System.out.println("Merk : " + mobil1.getMerk());
@@ -62,12 +62,12 @@ public class TK2_Klmpk5 {
 
         //Faris
         // Membuat objek Pesawat dengan data awal
-        Pesawat pesawat1 = new Pesawat("Boeing", "Putih", "Lion Air", 6);
+        Pesawat pesawat1 = new Pesawat("Boeing", "Putih", "Lion Air", "6");
         // Menggunakan Setter untuk mengubah nilai atribut
         pesawat1.setMerk("Airbus");
         pesawat1.setWarna("Putih");
         pesawat1.setMaskapai("Super Air Indonesia");
-        pesawat1.setJumlahRoda(6);
+        pesawat1.setJumlahRoda("6");
         // Menggunakan Getter untuk mengambil nilai atribut
         System.out.println("\n=== Data Pesawat ===");
         System.out.println("Merk : " + pesawat1.getMerk());
@@ -77,12 +77,12 @@ public class TK2_Klmpk5 {
 
         //Waffa
         // Membuat objek Sepeda dengan data awal
-        Sepeda sepeda1 = new Sepeda("Polygon", "Biru", "Xtrada 5", 2);
+        Sepeda sepeda1 = new Sepeda("Polygon", "Biru", "Xtrada 5", "2");
         // Menggunakan Setter untuk mengubah nilai atribut
         sepeda1.setMerk("United");
         sepeda1.setWarna("Hitam");
         sepeda1.setTipe("Miami");
-        sepeda1.setJumlahRoda(2);
+        sepeda1.setJumlahRoda("2");
         // Menggunakan Getter untuk mengambil nilai atribut
         System.out.println("\n=== Data Sepeda ===");
         System.out.println("Merk : " + sepeda1.getMerk());
