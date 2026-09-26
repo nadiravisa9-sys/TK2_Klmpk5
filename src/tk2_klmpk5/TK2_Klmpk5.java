@@ -92,12 +92,12 @@ public class TK2_Klmpk5 {
 
         //Anam
         //Membuat objek Bus dengan data awal
-        Bus bus1 = new Bus("Mercedes-Benz", "Putih", "OH 1626", 6);
+        Bus bus1 = new Bus("Mercedes-Benz", "Putih", "OH 1626", "6");
         //Mengunakan Setter untuk mengubah nilai atribut
         bus1.setMerk("Scania");
         bus1.setWarna("Merah");
         bus1.setTipe("K410");
-        bus1.setJumlahRoda(6);
+        bus1.setJumlahRoda("6");
         //Menggunakan Getter untuk mengambil nilai atribut
         System.out.println("\n=== Data Bus ===");
         System.out.println("Merk : " + bus1.getMerk());
