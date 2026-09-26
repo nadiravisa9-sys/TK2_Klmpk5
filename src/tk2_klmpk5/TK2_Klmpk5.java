@@ -77,12 +77,12 @@ public class TK2_Klmpk5 {
 
         //Waffa
         // Membuat objek Sepeda dengan data awal
-        Sepeda sepeda1 = new Sepeda("Polygon", "Biru", "Xtrada 5", 2);
+        Sepeda sepeda1 = new Sepeda("Polygon", "Biru", "Xtrada 5", "2");
         // Menggunakan Setter untuk mengubah nilai atribut
         sepeda1.setMerk("United");
         sepeda1.setWarna("Hitam");
         sepeda1.setTipe("Miami");
-        sepeda1.setJumlahRoda(2);
+        sepeda1.setJumlahRoda("2");
         // Menggunakan Getter untuk mengambil nilai atribut
         System.out.println("\n=== Data Sepeda ===");
         System.out.println("Merk : " + sepeda1.getMerk());

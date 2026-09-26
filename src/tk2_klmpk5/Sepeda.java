@@ -12,9 +12,16 @@ public class Sepeda {
     String Merk;
     String Warna;
     String Tipe;
-    int jumlahRoda;
+    String jumlahRoda;
+    
+        public Sepeda() {
+        this.Merk = "";
+        this.Warna = "";
+        this.Tipe = "";
+        this.jumlahRoda = "";
+    }
 
-    public Sepeda(String Merk, String Warna, String Tipe, int jumlahRoda) {
+    public Sepeda(String Merk, String Warna, String Tipe, String jumlahRoda) {
         this.Merk = Merk;
         this.Warna = Warna;
         this.Tipe = Tipe;
@@ -45,13 +52,17 @@ public class Sepeda {
         this.Tipe = Tipe;
     }
 
-    public int getJumlahRoda() {
+    public String getJumlahRoda() {
         return jumlahRoda;
     }
 
-    public void setJumlahRoda(int jumlahRoda) {
+    public void setJumlahRoda(String jumlahRoda) {
         this.jumlahRoda = jumlahRoda;
     }
+
+   
+
+  
     
     
 }
