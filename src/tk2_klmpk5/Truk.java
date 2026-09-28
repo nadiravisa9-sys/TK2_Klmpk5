@@ -12,9 +12,17 @@ public class Truk {
     String merk;
     String warna;
     String tipe;
-    int jumlahRoda;
+    String jumlahRoda;
+    
+    public Truk() {
+        this.merk = "";
+        this.warna = "";
+        this.tipe = "";
+        this.jumlahRoda = "";
+    
+    }
 
-    public Truk(String merk, String warna, String tipe, int jumlahRoda) {
+    public Truk(String merk, String warna, String tipe, String jumlahRoda) {
         this.merk = merk;
         this.warna = warna;
         this.tipe = tipe;
@@ -45,12 +53,11 @@ public class Truk {
         this.tipe = tipe;
     }
 
-    public int getJumlahRoda() {
+    public String getJumlahRoda() {
         return jumlahRoda;
     }
 
-    public void setJumlahRoda(int jumlahRoda) {
+    public void setJumlahRoda(String jumlahRoda) {
         this.jumlahRoda = jumlahRoda;
-    }
-    
+    } 
 }
