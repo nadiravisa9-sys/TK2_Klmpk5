@@ -59,6 +59,7 @@ public class frameMobil extends javax.swing.JFrame {
         oWarna = new javax.swing.JLabel();
         oTipe = new javax.swing.JLabel();
         oRoda = new javax.swing.JLabel();
+        tKembali = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -157,6 +158,13 @@ public class frameMobil extends javax.swing.JFrame {
                 .addContainerGap(33, Short.MAX_VALUE))
         );
 
+        tKembali.setIcon(new javax.swing.ImageIcon(getClass().getResource("/tk2_klmpk5/icons8-arrow-back-20.png"))); // NOI18N
+        tKembali.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                tKembaliMouseClicked(evt);
+            }
+        });
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -190,13 +198,19 @@ public class frameMobil extends javax.swing.JFrame {
                             .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(0, 0, Short.MAX_VALUE)))
                 .addGap(18, 18, 18))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(tKembali, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
+                .addComponent(tKembali)
+                .addGap(10, 10, 10)
                 .addComponent(jLabel1)
-                .addGap(48, 48, 48)
+                .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                         .addComponent(tMerk, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -262,6 +276,12 @@ public class frameMobil extends javax.swing.JFrame {
         oRoda.setText(Mb.getJumlahRoda());
     }//GEN-LAST:event_btnSimpanActionPerformed
 
+    private void tKembaliMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tKembaliMouseClicked
+        // TODO add your handling code here:
+        this.dispose();
+        new mainFrame().setVisible(true);
+    }//GEN-LAST:event_tKembaliMouseClicked
+
     /**
      * @param args the command line arguments
      */
@@ -304,6 +324,7 @@ public class frameMobil extends javax.swing.JFrame {
     private javax.swing.JLabel oRoda;
     private javax.swing.JLabel oTipe;
     private javax.swing.JLabel oWarna;
+    private javax.swing.JLabel tKembali;
     private javax.swing.JTextField tMerk;
     private javax.swing.JTextField tRoda;
     private javax.swing.JTextField tTipe;
