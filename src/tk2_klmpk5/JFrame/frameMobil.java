@@ -2,35 +2,34 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
-package tk2_klmpk5;
+package tk2_klmpk5.JFrame;
+
+import tk2_klmpk5.Mobil;
 
 /**
  *
- * @author pc
+ * @author NADIRA
  */
-public class FrameTruk extends javax.swing.JFrame {
+public class frameMobil extends javax.swing.JFrame {
     
-    private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(FrameTruk.class.getName());
+    private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(frameMobil.class.getName());
 
     /**
-     * Creates new form FrameTruk
+     * Creates new form frameMobil
      */
-    public FrameTruk() {
+    public frameMobil() {
         initComponents();
-        
     }
-    void Reset()
-    {
-    tMerk.setText(null);
-    tWarna.setText(null);
-    tTipe.setText(null);
-    tRoda.setText(null);
-    
-    oMerk.setText(null);
-    oWarna.setText(null);
-    oTipe.setText(null);
-    oRoda.setText(null);
-    
+    void Reset(){
+        tMerk.setText(null);
+        tRoda.setText(null);
+        tTipe.setText(null);
+        tWarna.setText(null);
+        
+        oMerk.setText(null);
+        oRoda.setText(null);
+        oTipe.setText(null);
+        oWarna.setText(null);
     }
 
     /**
@@ -68,7 +67,7 @@ public class FrameTruk extends javax.swing.JFrame {
 
         jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel1.setText("TRUK");
+        jLabel1.setText("MOBIL");
 
         jLabel2.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
         jLabel2.setText("Nama Merk : ");
@@ -132,12 +131,14 @@ public class FrameTruk extends javax.swing.JFrame {
                     .addComponent(jLabel8)
                     .addComponent(jLabel9))
                 .addGap(117, 117, 117)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(oWarna, javax.swing.GroupLayout.DEFAULT_SIZE, 84, Short.MAX_VALUE)
-                    .addComponent(oTipe, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(oRoda, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(oMerk, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addContainerGap(169, Short.MAX_VALUE))
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(oTipe, javax.swing.GroupLayout.DEFAULT_SIZE, 253, Short.MAX_VALUE)
+                            .addComponent(oRoda, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(oWarna, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addContainerGap())
+                    .addComponent(oMerk, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -161,7 +162,7 @@ public class FrameTruk extends javax.swing.JFrame {
                 .addContainerGap(33, Short.MAX_VALUE))
         );
 
-        tKembali.setIcon(new javax.swing.ImageIcon(getClass().getResource("/tk2_klmpk5/icons8-arrow-back-20.png"))); // NOI18N
+        tKembali.setIcon(new javax.swing.ImageIcon(getClass().getResource("/tk2_klmpk5/icon/icons8-arrow-back-20.png"))); // NOI18N
         tKembali.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 tKembaliMouseClicked(evt);
@@ -172,6 +173,7 @@ public class FrameTruk extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jLabel1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
@@ -200,23 +202,19 @@ public class FrameTruk extends javax.swing.JFrame {
                             .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(0, 0, Short.MAX_VALUE)))
                 .addGap(18, 18, 18))
-            .addGroup(layout.createSequentialGroup()
-                .addGap(41, 41, 41)
-                .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(tKembali, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(tKembali, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(tKembali))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(20, 20, 20)
-                        .addComponent(jLabel1)))
-                .addGap(34, 34, 34)
+                .addContainerGap()
+                .addComponent(tKembali)
+                .addGap(10, 10, 10)
+                .addComponent(jLabel1)
+                .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                         .addComponent(tMerk, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -244,6 +242,7 @@ public class FrameTruk extends javax.swing.JFrame {
         );
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     private void tMerkActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tMerkActionPerformed
@@ -270,16 +269,16 @@ public class FrameTruk extends javax.swing.JFrame {
 
     private void btnSimpanActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSimpanActionPerformed
         // TODO add your handling code here:
-        Truk Tr = new Truk();
-        Tr.setMerk(tMerk.getText());
-        Tr.setWarna(tWarna.getText());
-        Tr.setTipe(tTipe.getText());
-        Tr.setJumlahRoda(tRoda.getText());
+        Mobil Mb = new Mobil();
+        Mb.setMerk(tMerk.getText());
+        Mb.setWarna(tWarna.getText());
+        Mb.setTipe(tTipe.getText());
+        Mb.setJumlahRoda(tRoda.getText());
 
-        oMerk.setText(Tr.getMerk());
-        oWarna.setText(Tr.getWarna());
-        oTipe.setText(Tr.getTipe());
-        oRoda.setText(Tr.getJumlahRoda());
+        oMerk.setText(Mb.getMerk());
+        oWarna.setText(Mb.getWarna());
+        oTipe.setText(Mb.getTipe());
+        oRoda.setText(Mb.getJumlahRoda());
     }//GEN-LAST:event_btnSimpanActionPerformed
 
     private void tKembaliMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tKembaliMouseClicked
@@ -310,7 +309,7 @@ public class FrameTruk extends javax.swing.JFrame {
         //</editor-fold>
 
         /* Create and display the form */
-        java.awt.EventQueue.invokeLater(() -> new FrameTruk().setVisible(true));
+        java.awt.EventQueue.invokeLater(() -> new frameMobil().setVisible(true));
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

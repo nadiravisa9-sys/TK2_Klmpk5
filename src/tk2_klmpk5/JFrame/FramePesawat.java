@@ -2,31 +2,33 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
-package tk2_klmpk5;
+package tk2_klmpk5.JFrame;
+
+import tk2_klmpk5.Pesawat;
 
 /**
  *
- * @author user
+ * @author LENOVO
  */
-public class FrameSepeda extends javax.swing.JFrame {
+public class FramePesawat extends javax.swing.JFrame {
     
-    private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(FrameSepeda.class.getName());
+    private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(FramePesawat.class.getName());
 
     /**
-     * Creates new form FrameSepeda
+     * Creates new form FramePesawat
      */
-    public FrameSepeda() {
+    public FramePesawat() {
         initComponents();
     }
     void Reset(){
         tMerk.setText(null);
         tRoda.setText(null);
-        tTipe.setText(null);
+        tMaskapai.setText(null);
         tWarna.setText(null);
         
         oMerk.setText(null);
         oRoda.setText(null);
-        oTipe.setText(null);
+        oMaskapai.setText(null);
         oWarna.setText(null);
     }
 
@@ -39,6 +41,7 @@ public class FrameSepeda extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jLabel5 = new javax.swing.JLabel();
         btnReset = new javax.swing.JButton();
         btnSimpan = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
@@ -49,19 +52,21 @@ public class FrameSepeda extends javax.swing.JFrame {
         jLabel9 = new javax.swing.JLabel();
         oMerk = new javax.swing.JLabel();
         oWarna = new javax.swing.JLabel();
-        oTipe = new javax.swing.JLabel();
+        oMaskapai = new javax.swing.JLabel();
         oRoda = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         tMerk = new javax.swing.JTextField();
         jLabel3 = new javax.swing.JLabel();
         tWarna = new javax.swing.JTextField();
         jLabel4 = new javax.swing.JLabel();
-        tTipe = new javax.swing.JTextField();
+        tMaskapai = new javax.swing.JTextField();
         tRoda = new javax.swing.JTextField();
-        jLabel5 = new javax.swing.JLabel();
         tKembali = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+
+        jLabel5.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
+        jLabel5.setText("Jumlah Roda : ");
 
         btnReset.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         btnReset.setText("Reset");
@@ -73,7 +78,7 @@ public class FrameSepeda extends javax.swing.JFrame {
 
         jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel1.setText("SEPEDA");
+        jLabel1.setText("PESAWAT");
 
         jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder("Output"));
 
@@ -84,22 +89,18 @@ public class FrameSepeda extends javax.swing.JFrame {
         jLabel7.setText("Jenis Warna :");
 
         jLabel8.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
-        jLabel8.setText("Nama Tipe :");
+        jLabel8.setText("Nama Maskapai :");
 
         jLabel9.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
         jLabel9.setText("Jumlah Roda :");
 
         oMerk.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        oMerk.setText("jLabel10");
 
         oWarna.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        oWarna.setText("jLabel11");
 
-        oTipe.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        oTipe.setText("jLabel12");
+        oMaskapai.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
 
         oRoda.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        oRoda.setText("jLabel13");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -114,31 +115,31 @@ public class FrameSepeda extends javax.swing.JFrame {
                     .addComponent(jLabel9))
                 .addGap(117, 117, 117)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(oRoda)
-                    .addComponent(oTipe)
-                    .addComponent(oWarna)
-                    .addComponent(oMerk))
-                .addContainerGap(197, Short.MAX_VALUE))
+                    .addComponent(oMerk, javax.swing.GroupLayout.DEFAULT_SIZE, 247, Short.MAX_VALUE)
+                    .addComponent(oWarna, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(oMaskapai, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(oRoda, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap())
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(21, 21, 21)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel6)
-                    .addComponent(oMerk))
-                .addGap(21, 21, 21)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(oMerk, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel7)
-                    .addComponent(oWarna))
-                .addGap(21, 21, 21)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(oWarna, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel8)
-                    .addComponent(oTipe))
-                .addGap(21, 21, 21)
+                    .addComponent(oMaskapai, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel9)
-                    .addComponent(oRoda))
+                    .addComponent(oRoda, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(33, Short.MAX_VALUE))
         );
 
@@ -151,14 +152,11 @@ public class FrameSepeda extends javax.swing.JFrame {
         jLabel3.setText("Jenis Warna : ");
 
         jLabel4.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
-        jLabel4.setText("Nama Tipe : ");
+        jLabel4.setText("Nama Maskapai : ");
 
         tRoda.addActionListener(this::tRodaActionPerformed);
 
-        jLabel5.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
-        jLabel5.setText("Jumlah Roda : ");
-
-        tKembali.setIcon(new javax.swing.ImageIcon(getClass().getResource("/tk2_klmpk5/icons8-arrow-back-20.png"))); // NOI18N
+        tKembali.setIcon(new javax.swing.ImageIcon(getClass().getResource("/tk2_klmpk5/icon/icons8-arrow-back-20.png"))); // NOI18N
         tKembali.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 tKembaliMouseClicked(evt);
@@ -169,11 +167,16 @@ public class FrameSepeda extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(tKembali, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(0, 0, Short.MAX_VALUE)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                             .addGroup(layout.createSequentialGroup()
                                 .addComponent(btnSimpan, javax.swing.GroupLayout.PREFERRED_SIZE, 94, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -181,37 +184,34 @@ public class FrameSepeda extends javax.swing.JFrame {
                                 .addComponent(btnReset, javax.swing.GroupLayout.PREFERRED_SIZE, 94, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(layout.createSequentialGroup()
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 114, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 111, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 122, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 122, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jLabel4))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(tTipe, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 293, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(tMaskapai, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 293, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(tRoda, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 293, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(tWarna, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 293, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(tMerk, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 293, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(18, 18, 18))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addComponent(tKembali, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addContainerGap())))
+                            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addGap(18, 18, 18))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(tKembali)
-                .addGap(1, 1, 1)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel1)
-                .addGap(27, 27, 27)
+                .addGap(31, 31, 31)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                         .addComponent(tMerk, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
                         .addComponent(tWarna, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
-                        .addComponent(tTipe, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(tMaskapai, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
                         .addComponent(tRoda, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createSequentialGroup()
@@ -232,11 +232,11 @@ public class FrameSepeda extends javax.swing.JFrame {
         );
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     private void tMerkActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tMerkActionPerformed
         // TODO add your handling code here:
-        Motor Mt = new Motor();
 
     }//GEN-LAST:event_tMerkActionPerformed
 
@@ -246,17 +246,16 @@ public class FrameSepeda extends javax.swing.JFrame {
 
     private void btnSimpanActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSimpanActionPerformed
         // TODO add your handling code here:
+        Pesawat Ps = new Pesawat();
+        Ps.setMerk(tMerk.getText());
+        Ps.setWarna(tWarna.getText());
+        Ps.setMaskapai(tMaskapai.getText());
+        Ps.setJumlahRoda(tRoda.getText());
         
-        Sepeda Sp = new Sepeda();
-        Sp.setMerk(tMerk.getText());
-        Sp.setWarna(tWarna.getText());
-        Sp.setTipe(tTipe.getText());
-        Sp.setJumlahRoda(tRoda.getText());
-        
-        oMerk.setText(Sp.getMerk());
-        oWarna.setText(Sp.getWarna());
-        oTipe.setText(Sp.getTipe());
-        oRoda.setText(Sp.getJumlahRoda());
+        oMerk.setText(Ps.getMerk());
+        oWarna.setText(Ps.getWarna());
+        oMaskapai.setText(Ps.getMaskapai());
+        oRoda.setText(Ps.getJumlahRoda());
     }//GEN-LAST:event_btnSimpanActionPerformed
 
     private void btnResetActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnResetActionPerformed
@@ -292,7 +291,7 @@ public class FrameSepeda extends javax.swing.JFrame {
         //</editor-fold>
 
         /* Create and display the form */
-        java.awt.EventQueue.invokeLater(() -> new FrameSepeda().setVisible(true));
+        java.awt.EventQueue.invokeLater(() -> new FramePesawat().setVisible(true));
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
@@ -308,14 +307,14 @@ public class FrameSepeda extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JLabel oMaskapai;
     private javax.swing.JLabel oMerk;
     private javax.swing.JLabel oRoda;
-    private javax.swing.JLabel oTipe;
     private javax.swing.JLabel oWarna;
     private javax.swing.JLabel tKembali;
+    private javax.swing.JTextField tMaskapai;
     private javax.swing.JTextField tMerk;
     private javax.swing.JTextField tRoda;
-    private javax.swing.JTextField tTipe;
     private javax.swing.JTextField tWarna;
     // End of variables declaration//GEN-END:variables
 }
