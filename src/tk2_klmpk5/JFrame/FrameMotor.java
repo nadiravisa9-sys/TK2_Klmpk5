@@ -71,7 +71,7 @@ public class FrameMotor extends javax.swing.JFrame {
 
         jPanel2.setBackground(new java.awt.Color(255, 255, 255));
 
-        jLabel10.setIcon(new javax.swing.ImageIcon("D:\\netbeansProject\\TK2_Klmpk5\\src\\tk2_klmpk5\\icon\\Group 1.png")); // NOI18N
+        jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/tk2_klmpk5/icon/Group 1.png"))); // NOI18N
 
         jLabel11.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
         jLabel11.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
