@@ -12,7 +12,7 @@ public class Sepeda {
     String Merk;
     String Warna;
     String Tipe;
-    String jumlahRoda;
+    String jumlahRoda;  
     
         public Sepeda() {
         this.Merk = "";
