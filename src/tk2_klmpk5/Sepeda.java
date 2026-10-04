@@ -9,10 +9,10 @@ package tk2_klmpk5;
  * @author user
  */
 public class Sepeda {
-    String Merk;
-    String Warna;
-    String Tipe;
-    String jumlahRoda;
+    private String Merk;
+    private String Warna;
+    private String Tipe;
+    private String jumlahRoda;  
     
         public Sepeda() {
         this.Merk = "";

@@ -9,10 +9,10 @@ package tk2_klmpk5;
  * @author NADIRA
  */
 public class Mobil {
-    String merk;
-    String warna;
-    String tipe;
-    String jumlahRoda;
+    private String merk;
+    private String warna;
+    private String tipe;
+    private String jumlahRoda;
     
     public Mobil(){
         this.merk = "";
