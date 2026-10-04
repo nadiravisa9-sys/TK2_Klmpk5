@@ -9,12 +9,13 @@ package tk2_klmpk5;
  * @author Sirdzat
  */
 public class Motor {
-    String Merk;
-    String Warna;
-    String Tipe;
-    String jumlahRoda;
-    
-        public Motor() {
+
+    private String Merk;
+    private String Warna;
+    private String Tipe;
+    private String jumlahRoda;
+
+    public Motor() {
         this.Merk = "";
         this.Warna = "";
         this.Tipe = "";
