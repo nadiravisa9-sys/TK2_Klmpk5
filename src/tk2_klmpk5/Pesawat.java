@@ -9,10 +9,10 @@ package tk2_klmpk5;
  * @author LENOVO
  */
 public class Pesawat {
-    String Merk;
-    String Warna;
-    String Maskapai;
-    String jumlahRoda;
+    private String Merk;
+    private String Warna;
+    private String Maskapai;
+    private String jumlahRoda;
     
      public Pesawat() {
         this.Merk = "";
@@ -21,7 +21,7 @@ public class Pesawat {
         this.jumlahRoda = "";
     }
 
-    public Pesawat(String Merk, String Warna, String Maskapai, String jumlahRoda) {
+    public Pesawat(String Merk,String Warna,String Maskapai,String jumlahRoda) {
         this.Merk = Merk;
         this.Warna = Warna;
         this.Maskapai = Maskapai;
