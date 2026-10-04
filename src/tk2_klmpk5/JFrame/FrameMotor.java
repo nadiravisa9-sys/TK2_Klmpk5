@@ -255,7 +255,7 @@ public class FrameMotor extends javax.swing.JFrame {
         // TODO add your handling code here:
         Motor Mt = new Motor();
         Mt.setMerk(tMerk.getText());
-        Mt.setWarna(tMerk.getText());
+        Mt.setWarna(tWarna.getText());
         Mt.setTipe(tTipe.getText());
         Mt.setJumlahRoda(tRoda.getText());
 

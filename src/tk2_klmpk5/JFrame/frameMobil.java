@@ -253,7 +253,7 @@ public class frameMobil extends javax.swing.JFrame {
         // TODO add your handling code here:
         Mobil Mb = new Mobil();
         Mb.setMerk(tMerk.getText());
-        Mb.setWarna(tMerk.getText());
+        Mb.setWarna(tWarna.getText());
         Mb.setTipe(tTipe.getText());
         Mb.setJumlahRoda(tRoda.getText());
         

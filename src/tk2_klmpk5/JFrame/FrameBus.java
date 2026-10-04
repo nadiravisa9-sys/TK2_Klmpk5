@@ -253,7 +253,7 @@ public class FrameBus extends javax.swing.JFrame {
         // TODO add your handling code here:
         Bus Bs = new Bus();
         Bs.setMerk(tMerk.getText());
-        Bs.setWarna(tMerk.getText());
+        Bs.setWarna(tWarna.getText());
         Bs.setTipe(tTipe.getText());
         Bs.setJumlahRoda(tRoda.getText());
 

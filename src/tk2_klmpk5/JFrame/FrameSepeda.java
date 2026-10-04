@@ -254,7 +254,7 @@ public class FrameSepeda extends javax.swing.JFrame {
         // TODO add your handling code here:
         Sepeda Sp = new Sepeda();
         Sp.setMerk(tMerk.getText());
-        Sp.setWarna(tMerk.getText());
+        Sp.setWarna(tWarna.getText());
         Sp.setTipe(tTipe.getText());
         Sp.setJumlahRoda(tRoda.getText());
 
