@@ -256,7 +256,7 @@ public class FrameTruk extends javax.swing.JFrame {
         // TODO add your handling code here:
         Truk Tr = new Truk();
         Tr.setMerk(tMerk.getText());
-        Tr.setWarna(tWarna.getText());
+        Tr.setWarna(tMerk.getText());
         Tr.setTipe(tTipe.getText());
         Tr.setJumlahRoda(tRoda.getText());
 
