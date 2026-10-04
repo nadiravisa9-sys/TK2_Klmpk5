@@ -9,10 +9,10 @@ package tk2_klmpk5;
  * @author ANAM
  */
 public class Bus {
-    String Merk;
-    String Warna;
-    String Tipe;
-    String jumlahRoda; 
+     private String Merk;
+     private String Warna;
+     private String Tipe;
+     private String jumlahRoda; 
     
     public Bus() {
         this.Merk = "";
@@ -20,7 +20,7 @@ public class Bus {
         this.Tipe = "";
         this.jumlahRoda = "";
     }
-    public Bus(String Merk, String Warna, String Tipe, String jumlahRoda) {
+    public Bus( String Merk, String Warna, String Tipe, String jumlahRoda) {
         this.Merk = Merk;
         this.Warna = Warna;
         this.Tipe = Tipe;
