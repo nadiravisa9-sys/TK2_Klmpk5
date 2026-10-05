@@ -9,10 +9,10 @@ package tk2_klmpk5;
  * @author pc
  */
 public class Truk {
-    private String merk;
-    private String warna;
-    private String tipe;
-    private String jumlahRoda;
+    public String merk;
+    public String warna;
+    public String tipe;
+    public String jumlahRoda;
     
     public Truk() {
         this.merk = "";
