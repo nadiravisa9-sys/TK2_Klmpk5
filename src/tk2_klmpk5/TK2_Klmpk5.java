@@ -4,6 +4,13 @@
  */
 package tk2_klmpk5;
 
+import tk2_klmpk5.model.Truk;
+import tk2_klmpk5.model.Sepeda;
+import tk2_klmpk5.model.Bus;
+import tk2_klmpk5.model.Mobil;
+import tk2_klmpk5.model.Motor;
+import tk2_klmpk5.model.Pesawat;
+
 /**
  *
  * @author NADIRA

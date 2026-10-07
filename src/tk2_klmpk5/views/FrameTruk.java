@@ -2,34 +2,37 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
-package tk2_klmpk5.JFrame;
+package tk2_klmpk5.views;
 
-import tk2_klmpk5.Mobil;
+import tk2_klmpk5.model.Truk;
 
 /**
  *
- * @author NADIRA
+ * @author pc
  */
-public class frameMobil extends javax.swing.JFrame {
+public class FrameTruk extends javax.swing.JFrame {
     
-    private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(frameMobil.class.getName());
+    private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(FrameTruk.class.getName());
 
     /**
-     * Creates new form frameMobil
+     * Creates new form FrameTruk
      */
-    public frameMobil() {
+    public FrameTruk() {
         initComponents();
-    }
-    void Reset(){
-        tMerk.setText(null);
-        tRoda.setText(null);
-        tTipe.setText(null);
-        tWarna.setText(null);
         
-        oMerk.setText(null);
-        oRoda.setText(null);
-        oTipe.setText(null);
-        oWarna.setText(null);
+    }
+    void Reset()
+    {
+    tMerk.setText(null);
+    tWarna.setText(null);
+    tTipe.setText(null);
+    tRoda.setText(null);
+    
+    oMerk.setText(null);
+    oWarna.setText(null);
+    oTipe.setText(null);
+    oRoda.setText(null);
+    
     }
 
     /**
@@ -69,11 +72,11 @@ public class frameMobil extends javax.swing.JFrame {
 
         jPanel2.setBackground(new java.awt.Color(255, 255, 255));
 
-        jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/tk2_klmpk5/icon/Group 3.png"))); // NOI18N
+        jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/tk2_klmpk5/icon/Group 11.png"))); // NOI18N
 
         jLabel11.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
         jLabel11.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel11.setText("MOBIL");
+        jLabel11.setText("TRUK");
 
         jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         jLabel1.setText("Nama Merk:");
@@ -193,7 +196,7 @@ public class frameMobil extends javax.swing.JFrame {
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addGap(103, 103, 103)
                 .addComponent(bSimpan)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 187, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 177, Short.MAX_VALUE)
                 .addComponent(bReset)
                 .addGap(128, 128, 128))
         );
@@ -251,16 +254,16 @@ public class frameMobil extends javax.swing.JFrame {
 
     private void bSimpanActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bSimpanActionPerformed
         // TODO add your handling code here:
-        Mobil Mb = new Mobil();
-        Mb.setMerk(tMerk.getText());
-        Mb.setWarna(tWarna.getText());
-        Mb.setTipe(tTipe.getText());
-        Mb.setJumlahRoda(tRoda.getText());
-        
-        oMerk.setText(Mb.getMerk());
-        oWarna.setText(Mb.getWarna());
-        oTipe.setText(Mb.getTipe());
-        oRoda.setText(Mb.getJumlahRoda());
+        Truk Tr = new Truk();
+        Tr.setMerk(tMerk.getText());
+        Tr.setWarna(tMerk.getText());
+        Tr.setTipe(tTipe.getText());
+        Tr.setJumlahRoda(tRoda.getText());
+
+        oMerk.setText(Tr.getMerk());
+        oWarna.setText(Tr.getWarna());
+        oTipe.setText(Tr.getTipe());
+        oRoda.setText(Tr.getJumlahRoda());
     }//GEN-LAST:event_bSimpanActionPerformed
 
     private void bResetActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bResetActionPerformed
@@ -296,7 +299,7 @@ public class frameMobil extends javax.swing.JFrame {
         //</editor-fold>
 
         /* Create and display the form */
-        java.awt.EventQueue.invokeLater(() -> new frameMobil().setVisible(true));
+        java.awt.EventQueue.invokeLater(() -> new FrameTruk().setVisible(true));
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
