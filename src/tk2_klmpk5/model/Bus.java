@@ -2,29 +2,28 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package tk2_klmpk5;
+package tk2_klmpk5.model;
 
 /**
  *
- * @author LENOVO
+ * @author ANAM
  */
-public class Pesawat {
-    public String Merk;
-    public String Warna;
-    public String Maskapai;
-    public String jumlahRoda;
+public class Bus {
+     private String Merk;
+     private String Warna;
+     private String Tipe;
+     private String jumlahRoda; 
     
-     public Pesawat() {
+    public Bus() {
         this.Merk = "";
         this.Warna = "";
-        this.Maskapai = "";
+        this.Tipe = "";
         this.jumlahRoda = "";
     }
-
-    public Pesawat(String Merk,String Warna,String Maskapai,String jumlahRoda) {
+    public Bus( String Merk, String Warna, String Tipe, String jumlahRoda) {
         this.Merk = Merk;
         this.Warna = Warna;
-        this.Maskapai = Maskapai;
+        this.Tipe = Tipe;
         this.jumlahRoda = jumlahRoda;
     }
 
@@ -44,12 +43,12 @@ public class Pesawat {
         this.Warna = Warna;
     }
 
-    public String getMaskapai() {
-        return Maskapai;
+    public String getTipe() {
+        return Tipe;
     }
 
-    public void setMaskapai(String Maskapai) {
-        this.Maskapai = Maskapai;
+    public void setTipe(String Tipe) {
+        this.Tipe = Tipe;
     }
 
     public String getJumlahRoda() {
@@ -59,5 +58,9 @@ public class Pesawat {
     public void setJumlahRoda(String jumlahRoda) {
         this.jumlahRoda = jumlahRoda;
     }
+
+
     
+     
 }
+

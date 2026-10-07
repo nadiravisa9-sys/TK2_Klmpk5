@@ -2,25 +2,26 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package tk2_klmpk5;
+package tk2_klmpk5.model;
 
 /**
  *
- * @author ANAM
+ * @author user
  */
-public class Bus {
-     public String Merk;
-     public String Warna;
-     public String Tipe;
-     public String jumlahRoda; 
+public class Sepeda {
+    private String Merk;
+    private String Warna;
+    private String Tipe;
+    private String jumlahRoda;  
     
-    public Bus() {
+        public Sepeda() {
         this.Merk = "";
         this.Warna = "";
         this.Tipe = "";
         this.jumlahRoda = "";
     }
-    public Bus( String Merk, String Warna, String Tipe, String jumlahRoda) {
+
+    public Sepeda(String Merk, String Warna, String Tipe, String jumlahRoda) {
         this.Merk = Merk;
         this.Warna = Warna;
         this.Tipe = Tipe;
@@ -59,8 +60,10 @@ public class Bus {
         this.jumlahRoda = jumlahRoda;
     }
 
+   
 
+  
     
-     
+    
 }
 

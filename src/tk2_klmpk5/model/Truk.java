@@ -2,17 +2,17 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package tk2_klmpk5;
+package tk2_klmpk5.model;
 
 /**
  *
  * @author pc
  */
 public class Truk {
-    public String merk;
-    public String warna;
-    public String tipe;
-    public String jumlahRoda;
+    String merk;
+    String warna;
+    String tipe;
+    String jumlahRoda;
     
     public Truk() {
         this.merk = "";
