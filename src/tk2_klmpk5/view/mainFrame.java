@@ -2,7 +2,12 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
-package tk2_klmpk5.views;
+package tk2_klmpk5.view;
+import tk2_klmpk5.view.FrameTruk;
+import tk2_klmpk5.view.FrameMotor;
+import tk2_klmpk5.view.FrameSepeda;
+import tk2_klmpk5.view.FramePesawat;
+import tk2_klmpk5.view.FrameBus;
 import tk2_klmpk5.model.Login;
 
 /**
