@@ -9,10 +9,10 @@ package tk2_klmpk5.model;
  * @author ANAM
  */
 public class Bus {
-     private String Merk;
-     private String Warna;
-     private String Tipe;
-     private String jumlahRoda; 
+     public String Merk;
+     public String Warna;
+     public String Tipe;
+     public String jumlahRoda; 
     
     public Bus() {
         this.Merk = "";

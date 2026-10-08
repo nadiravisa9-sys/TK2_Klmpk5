@@ -9,10 +9,10 @@ package tk2_klmpk5.model;
  * @author LENOVO
  */
 public class Pesawat {
-    private String Merk;
-    private String Warna;
-    private String Maskapai;
-    private String jumlahRoda;
+    public String Merk;
+    public String Warna;
+    public String Maskapai;
+    public String jumlahRoda;
     
      public Pesawat() {
         this.Merk = "";
