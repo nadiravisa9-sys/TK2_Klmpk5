@@ -54,9 +54,7 @@ public class TK2_Klmpk5 {
 
         //Saiful
         // Membuat Objek Truk dengan data awal
-        Truk Truk1 = new Truk("Mitsubishi", "Kuning", "Fuso", "6");
-        Truk1.tipe = "Dutro";
-        System.out.println("Tipe Truk (Public) : " + Truk1.tipe);
+        Truk Truk1 = new Truk();
         //Menggunakan Setter untuk mengubah nilai atribut
         Truk1.setMerk("Hino");
         Truk1.setWarna("Hijau");
