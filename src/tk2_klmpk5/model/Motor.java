@@ -8,56 +8,8 @@ package tk2_klmpk5.model;
  *
  * @author Sirdzat
  */
-public class Motor {
-
-    private String Merk;
-    private String Warna;
-    private String Tipe;
-    private String jumlahRoda;
-
-    public Motor() {
-        this.Merk = "";
-        this.Warna = "";
-        this.Tipe = "";
-        this.jumlahRoda = "";
-    }
-
-    public Motor(String Merk, String Warna, String Tipe, String jumlahRoda) {
-        this.Merk = Merk;
-        this.Warna = Warna;
-        this.Tipe = Tipe;
-        this.jumlahRoda = jumlahRoda;
-    }
-
-    public String getMerk() {
-        return Merk;
-    }
-
-    public void setMerk(String Merk) {
-        this.Merk = Merk;
-    }
-
-    public String getWarna() {
-        return Warna;
-    }
-
-    public void setWarna(String Warna) {
-        this.Warna = Warna;
-    }
-
-    public String getTipe() {
-        return Tipe;
-    }
-
-    public void setTipe(String Tipe) {
-        this.Tipe = Tipe;
-    }
-
-    public String getJumlahRoda() {
-        return jumlahRoda;
-    }
-
-    public void setJumlahRoda(String jumlahRoda) {
-        this.jumlahRoda = jumlahRoda;
+public class Motor extends Kendaraan{
+    public Motor(){
+        
     }
 }

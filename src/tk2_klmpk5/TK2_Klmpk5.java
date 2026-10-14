@@ -24,7 +24,7 @@ public class TK2_Klmpk5 {
         
         //Sirdzat
         //Membuat objek Motor dengan data awal
-        Motor motor1 = new Motor("Yamaha", "Merah", "Vega R", "2");
+        Motor motor1 = new Motor();
         //Menggunakan Setter untuk mengubah nilai atribut
         motor1.setMerk("Honda");
         motor1.setWarna("Putih");
