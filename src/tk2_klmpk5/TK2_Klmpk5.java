@@ -101,7 +101,7 @@ public class TK2_Klmpk5 {
 
         //Anam
         //Membuat objek Bus dengan data awal
-        Bus bus1 = new Bus("Mercedes-Benz", "Putih", "OH 1626", "6");
+        Bus bus1 = new Bus();
         //Mengunakan Setter untuk mengubah nilai atribut
         bus1.setMerk("Scania");
         bus1.setWarna("Merah");
