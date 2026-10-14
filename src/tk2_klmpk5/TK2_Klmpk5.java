@@ -84,7 +84,7 @@ public class TK2_Klmpk5 {
 
         //Waffa
         // Membuat objek Sepeda dengan data awal
-        Sepeda sepeda1 = new Sepeda("Polygon", "Biru", "Xtrada 5", "2");
+        Sepeda sepeda1 = new Sepeda();
         // Menggunakan Setter untuk mengubah nilai atribut
         sepeda1.setMerk("United");
         sepeda1.setWarna("Hitam");
