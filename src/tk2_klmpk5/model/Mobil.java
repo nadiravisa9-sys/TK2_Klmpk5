@@ -8,58 +8,13 @@ package tk2_klmpk5.model;
  *
  * @author NADIRA
  */
-public class Mobil {
-    private String merk;
-    private String warna;
-    private String tipe;
-    private String jumlahRoda;
+public class Mobil extends Kendaraan{
+     public Mobil() {
+         
+    }
+     
+     
     
-    public Mobil(){
-        this.merk = "";
-        this.warna = "";
-        this.tipe = "";
-        this.jumlahRoda = "";
-    }
-
-    public Mobil(String merk, String warna, String tipe, String jumlahRoda) {
-        this.merk = merk;
-        this.warna = warna;
-        this.tipe = tipe;
-        this.jumlahRoda = jumlahRoda;
-    }
-
-    public String getMerk() {
-        return merk;
-    }
-
-    public void setMerk(String merk) {
-        this.merk = merk;
-    }
-
-    public String getWarna() {
-        return warna;
-    }
-
-    public void setWarna(String warna) {
-        this.warna = warna;
-    }
-
-    public String getTipe() {
-        return tipe;
-    }
-
-    public void setTipe(String tipe) {
-        this.tipe = tipe;
-    }
-
-    public String getJumlahRoda() {
-        return jumlahRoda;
-    }
-
-    public void setJumlahRoda(String jumlahRoda) {
-        this.jumlahRoda = jumlahRoda;
     }
     
-    
 
-}
