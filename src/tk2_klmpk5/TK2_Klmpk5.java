@@ -71,7 +71,7 @@ public class TK2_Klmpk5 {
 
         //Faris
         // Membuat objek Pesawat dengan data awal
-        Pesawat pesawat1 = new Pesawat("Boeing", "Putih", "Lion Air", "6");
+        Pesawat pesawat1 = new Pesawat();
         // Menggunakan Setter untuk mengubah nilai atribut
         pesawat1.setMerk("Airbus");
         pesawat1.setWarna("Putih");

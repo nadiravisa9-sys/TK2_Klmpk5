@@ -8,41 +8,9 @@ package tk2_klmpk5.model;
  *
  * @author LENOVO
  */
-public class Pesawat {
-    public String Merk;
-    public String Warna;
-    public String Maskapai;
-    public String jumlahRoda;
+public class Pesawat extends Kendaraan{
     
-     public Pesawat() {
-        this.Merk = "";
-        this.Warna = "";
-        this.Maskapai = "";
-        this.jumlahRoda = "";
-    }
-
-    public Pesawat(String Merk,String Warna,String Maskapai,String jumlahRoda) {
-        this.Merk = Merk;
-        this.Warna = Warna;
-        this.Maskapai = Maskapai;
-        this.jumlahRoda = jumlahRoda;
-    }
-
-    public String getMerk() {
-        return Merk;
-    }
-
-    public void setMerk(String Merk) {
-        this.Merk = Merk;
-    }
-
-    public String getWarna() {
-        return Warna;
-    }
-
-    public void setWarna(String Warna) {
-        this.Warna = Warna;
-    }
+        String Maskapai;
 
     public String getMaskapai() {
         return Maskapai;
@@ -50,14 +18,5 @@ public class Pesawat {
 
     public void setMaskapai(String Maskapai) {
         this.Maskapai = Maskapai;
-    }
-
-    public String getJumlahRoda() {
-        return jumlahRoda;
-    }
-
-    public void setJumlahRoda(String jumlahRoda) {
-        this.jumlahRoda = jumlahRoda;
-    }
-    
+    }   
 }
